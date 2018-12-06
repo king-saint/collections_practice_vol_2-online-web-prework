@@ -48,11 +48,12 @@ def merge_data(set1, set2)
 end
 
 def find_cool(main_set)
-  
-      main_set.collect do |key, value|
-        if value == "cool"
-          puts "#{key}, #{value}"
+      main_set.collect do |cool_hash|
+        cool_hash.collect do |name, temp|
+          if temp == "cool"
+          puts "#{name}, #{temp}"
      end
   end
+end
 end
   
