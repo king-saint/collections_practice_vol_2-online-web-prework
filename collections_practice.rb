@@ -43,9 +43,13 @@ def count_elements(array)
 end
 
 def merge_data(v1, v2)
+<<<<<<< HEAD
   new_array = v1.merge(v2) {|key, newval, oldval| oldval - newval}
   new_array
   
+=======
+  v1[0].values.map.with_index {|v, i| v2[i].merge(v)}
+>>>>>>> cd31b64f7d2897464e60e29042f7be9df5c8a687
 end
 
 def find_cool(main_set)
