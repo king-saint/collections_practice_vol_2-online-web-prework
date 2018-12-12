@@ -43,9 +43,9 @@ def count_elements(array)
 end
 
 def merge_data(v1, v2)
-  new_array = v1.merge(v2) {|key, newval, oldval| oldval - newval}
-  new_array
-  
+
+  v2[0].values.map.with_index {|v, i| v1[i].merge(v)}
+
 end
 
 def find_cool(main_set)
@@ -56,5 +56,11 @@ def find_cool(main_set)
      end
   end
 end
+end
+
+def organize_schools
+  
+  
+  
 end
   
